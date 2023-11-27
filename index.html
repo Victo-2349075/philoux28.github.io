@@ -13,7 +13,7 @@
 </head>
 <body>
     <h1>Tic-Tac-Toe</h1>
-    <h2>It's X's turn!</h2>
+    <h2>C'est le tour de X !</h2>
     <!-- Many websites are just divs on divs on divs. -->
     <div class="flex-container flex-column">
         <div class="flex-container flex-wrap" id="board">
@@ -28,10 +28,28 @@
         <div class="square"></div>
         </div>
         <!-- I added a little reset button because our users are going to want to play round after round of our glorious game without ever refreshing the browser! -->
-        <button id="reset-button">reset</button>
+        <button id="reset-button">Recommencer</button>
+    </div>
+    <div id="score">
+        <span id="score-x">X: 0</span> - <span id="score-o">O: 0</span>
     </div>
 </body>
 <footer id="Footer">
-<ul> inspiration du projet</ul>
+
+
+    <div id="gauche">
+        <p id="p3">Inspiration du projet :</p>
+        <a id="p4" href="https://github.com/annaelizabeth2019/tictactoetwo.git">https://github.com/annaelizabeth2019/tictactoetwo.git </a>
+    </div>
+
+    <div id="milieux">
+        <p id="p1"> Philippe-Vu Beaulieu</p>
+        <p id="p2"> Design web A2023</p>
+    </div>
+
+    <div id="droite">
+        <img src="js/image/img.jpg" alt="" id="image">
+    </div>
+
 </footer>
 </html>

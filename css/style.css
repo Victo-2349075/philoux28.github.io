@@ -51,16 +51,75 @@ h2 {
     font-size: 20px;
     border: 1px solid black;
     height: 55px;
-    width: 100px;
+    width: 200px;
     margin: 10px;
+}
+body
+{
+margin: 0; /* Supprime les marges par défaut du corps du document */
 }
 #Footer
 {
-    width: 1000px; /* Largeur de la boîte */
-    height: 200px; /* Hauteur de la boîte */
+   display: grid;
+   grid-template-columns: repeat(3,1fr); /*la boite separer en 3 case égale*/
+    bottom: 0; /*sa fait qu'il se met en bas complètement*/
+    position: fixed; /* il reste figer ou il est*/
+    width: 100%; /* Largeur de la boîte */
+    height: 100px; /* Hauteur de la boîte */
     background-color: #f0f0f0; /* Couleur de fond */
     border: 2px solid #333; /* Bordure de 2 pixels solide, couleur #333 */
-    padding: 20px; /* Espace intérieur de la boîte */
-    margin: 50px auto; /* Marge extérieure pour centrer la boîte horizontalement */
-    position: fixed;
+ 
+}
+#milieux
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /*centrer verticale horizontale*/
+  justify-content: center;
+}
+#gauche
+{
+    display: flex;
+    align-items: flex-start; /*gauche*/
+    flex-direction: column;
+   justify-content: center; /*centrer verticale*/
+  
+   padding-left: 20px; /*20 px d'espace du bas a gauche*/
+
+
+
+}
+#droite
+{
+    display: flex;
+    align-items: flex-end; /*droite*/
+    flex-direction: column;
+   justify-content: center;
+  
+   padding-right: 20px;
+}
+
+#image
+{
+    border-radius: 55px; /*image soye en cercle*/
+    width: 80px;
+    height: 80px;
+}
+
+#p1,#p2,#p3,#p4{ /*pour que p1 a p2 se soye coller et que de p2 a p3 se soye coller*/
+    margin: 0;
+}
+
+
+
+/*police de charactère pour x et o*/
+@font-face
+{
+src: url(css/Rubik/Rubik-VariableFont_wght.ttf);
+
+font-family: "Rubik";
+}
+#board
+{
+font-family: "Rubik";
 }
